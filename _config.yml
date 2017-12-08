@@ -1,17 +1,17 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
-reading_time:       true
+title:              Dimitri's Blog
+# bio:                'Minimal, one column jekyll theme.'
+# description:        "Dimitri's always young.\n----Dimitri Young"
+reading_time:       false
 words_per_minute:   200
-logo:               'assets/img/logo.png'
-background:         'assets/img/placeholder-big.jpg'
+logo:               'assets/images/logo.jpg'
+background:         'assets/images/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://taylantatli.github.io/Moon
+# locale:             en_US
+url:                http://localhost:4000
 
 # Jekyll
-permalink:          /:title/
+permalink:          /:year/:month/:day/:title/
 markdown:           kramdown
 highlighter:        rouge
 kramdown:
@@ -26,31 +26,31 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   dimitris-blog
 
 # Social
 # if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
+google:
+  # plus:            
+  analytics: UA-110239638-1
   #verify:
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+# facebook:           username
+github-url:         controny
+email: 0755dimitri@gmail.com
+# twitter:            username
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          username
+# instagram:          username
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+# steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
