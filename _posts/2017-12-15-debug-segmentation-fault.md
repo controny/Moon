@@ -3,7 +3,6 @@ layout: post
 title:  "简单调试Segmentation Fault"
 tag:
 - C
-- 操作系统
 comments: true
 ---
 
