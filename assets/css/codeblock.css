@@ -12,26 +12,29 @@ pre {
   padding: .5rem;
   max-height: 800px;
   font-family: monospace;
-  code {
+}
+pre code {
     color: inherit;
     background-color: transparent;
     padding: 0;
     display: block;
-  }
-  .line-number {
+}
+
+code .line-number {
     display: block;
     float: left;
     margin: 0 1em 0 -1em;
     border-right: 1px solid #ddd;
     text-align: right;
-    span {
-      display: block;
-      padding: 0 .5em 0 1em;
-      color: #ccc;
-    }
-  }
-  .cl {
-    display: block;
-    clear: both;
-  }
+}
+
+.line-number span {
+  display: block;
+  padding: 0 .5em 0 1em;
+  color: #ccc;
+}
+
+.cl {
+  display: block;
+  clear: both;
 }
