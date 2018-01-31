@@ -55,6 +55,8 @@ GEM
       mini_portile2 (~> 2.3.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
+    octopress-escape-code (2.1.1)
+      jekyll (~> 3.0)
     pathutil (0.16.0)
       forwardable-extended (~> 2.6)
     rb-fsevent (0.10.2)
@@ -84,6 +86,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-mentions
   jekyll-sitemap
+  octopress-escape-code
 
 BUNDLED WITH
    1.16.0
