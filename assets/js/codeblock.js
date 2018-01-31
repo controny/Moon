@@ -1,7 +1,6 @@
 window.onload = function() {
   var pre = document.getElementsByTagName('pre'),
     pl = pre.length;
-  console.log("pl: " + pl + pre);
   for (var i = 0; i < pl; i++) {
     pre[i].innerHTML = '<span class="line-number"></span>' + pre[i].innerHTML + '<span class="cl"></span>';
     var num = pre[i].innerHTML.split(/\n/).length;
