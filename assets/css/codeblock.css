@@ -13,6 +13,7 @@ pre {
   max-height: 800px;
   font-family: monospace;
 }
+
 pre code {
     color: inherit;
     background-color: transparent;
@@ -20,7 +21,7 @@ pre code {
     display: block;
 }
 
-code .line-number {
+pre .line-number {
     display: block;
     float: left;
     margin: 0 1em 0 -1em;
@@ -34,7 +35,7 @@ code .line-number {
   color: #ccc;
 }
 
-.cl {
+pre .cl {
   display: block;
   clear: both;
 }
