@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[LeetCode] Next Permutation —— 找规律解题"
+title:  "[LeetCode] Next Permutation——找规律解题"
 tag:
 - C++
 - LeetCode
