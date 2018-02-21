@@ -4,6 +4,7 @@ title:  "[LeetCode] Next Permutation——找规律解题"
 tag:
 - C++
 - LeetCode
+- 算法
 comments: true
 ---
 
