@@ -172,7 +172,7 @@ function judgeVisitor(ip) {
 }
 
 $(function() {
-  AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");
+  console.log("av: ", AV);
   if ($('.leancloud_visitors').length == 1) {
 	// 文章页面，调用判断方法，对符合条件的访问增加访问次数
 	getVisitorIpAndJudge();
