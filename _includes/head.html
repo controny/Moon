@@ -38,8 +38,16 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/codeblock.css">
     <!-- JS -->
     <script src="{{ site.url }}/assets/js/modernizr-3.3.1.custom.min.js"></script>
+    <!-- code block line number -->
     <script src="{{ site.url }}/assets/js/codeblock.js"></script>
+    <!-- visitor counts -->
     <script src="{{ site.url }}/assets/js/busuanzi.pure.mini.js"></script>
+    <!-- post view counts -->
+    {% if site.leancloud.enable %}
+        <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+        <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+        <script src="{{ site.url }}/assets/js/leancloud-counts.js"></script>
+    {% endif %}
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="{{ site.url }}/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/favicon.png">

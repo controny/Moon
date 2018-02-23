@@ -8,7 +8,13 @@ logo:               'assets/images/logo.jpg'
 background:         'assets/images/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 # locale:             en_US
-url:                https://controny.github.io
+# url:                https://controny.github.io
+
+# leancloud
+leancloud:
+  enable: true
+  app_id: rQcka0lpNOlOAbFWBmChs6K0-gzGzoHsz
+  app_key: mIqCaYjcOohAqIfeN4amCjKM
 
 # Jekyll
 permalink:          /:year/:month/:day/:title/
