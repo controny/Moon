@@ -77,7 +77,7 @@ FROM table_name
 
 ### 语法
 ```sql
-UPDATE table_name SET field1=new-value1, field2=new-value2
+UPDATE table_name SET field1=new_value1, field2=new_value2
 [WHERE Clause]
 ```
 
@@ -87,3 +87,5 @@ UPDATE table_name SET field1=new-value1, field2=new-value2
 ```sql
 DELETE FROM table_name [WHERE Clause]
 ```
+
+参考：<https://www.w3cschool.cn/mysql/>
