@@ -39,7 +39,7 @@ MySQL目前常用的存储引擎有InnoDB和MyISAM，两者在索引的使用上
 ![](https://controny.github.io/assets/images/posts/20180226174258.png)
 现在，数据表中有了两行数据：
 ![](https://controny.github.io/assets/images/posts/20180226175154.png)
-当我插入`id`为6的数据行时，它会被插入到第一行：
+当我插入`id`为6的数据行时，它会被插入到第二行：
 ![](https://controny.github.io/assets/images/posts/20180226175242.png)
 这说明，该表是以`id`这个主键作为聚簇索引的，因此自动按照`id`的顺序排列。
 
@@ -53,7 +53,7 @@ MySQL目前常用的存储引擎有InnoDB和MyISAM，两者在索引的使用上
 ![](https://controny.github.io/assets/images/posts/20180226180605.png)
 
 ## 参考：
-<http://www.cnblogs.com/aspnethot/articles/1504082.html>
-<https://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html>
-<https://www.jianshu.com/p/2879225ba243>
-<https://www.linuxidc.com/Linux/2018-02/150809.htm>
+- <http://www.cnblogs.com/aspnethot/articles/1504082.html>
+- <https://www.cnblogs.com/morvenhuang/archive/2009/03/30/1425534.html>
+- <https://www.jianshu.com/p/2879225ba243>
+- <https://www.linuxidc.com/Linux/2018-02/150809.htm>
