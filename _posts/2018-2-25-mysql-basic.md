@@ -3,6 +3,7 @@ layout: post
 title:  "MySQL语法基础"
 tag:
 - MySQL
+- 数据库
 comments: true
 ---
 
