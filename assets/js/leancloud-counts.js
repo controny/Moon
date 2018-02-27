@@ -180,7 +180,7 @@ function judgeVisitor(ip) {
 function getCountryName(ip) {
   var country_name;
   $.ajax({
-	url: "http://freegeoip.net/json/" + ip,
+	url: "https://freegeoip.net/json/" + ip,
     success: function (data) {
         console.log("geolocation: ", data);
         country_name = data.country_name;
