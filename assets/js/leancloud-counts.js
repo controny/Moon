@@ -109,10 +109,6 @@ function judgeVisitor(ip) {
   var $postInfo = $(".leancloud_visitors");
   var post_url = $postInfo.attr('id').trim();
 
-  // get country name by id
-  var country_name = getCountryName(ip);
-  console.log("country_name: ", country_name);
-
   var query = new AV.Query(Visitor);
 
   query.equalTo("visitor_ip", ip);
@@ -151,6 +147,10 @@ function judgeVisitor(ip) {
 		console.log('该IP第一次访问该文章，保存新的访问记录，并增加访问次数');
 
 		addCount(Counter);
+
+        // get country name by id
+        var country_name = getCountryName(ip);
+        console.log("country_name: ", country_name);
 
 		var newVisitor = new Visitor();
 		/* Set ACL */
