@@ -109,6 +109,10 @@ function judgeVisitor(ip) {
   var $postInfo = $(".leancloud_visitors");
   var post_url = $postInfo.attr('id').trim();
 
+  // get country name by id
+  var country_name = getCountryName(ip);
+  console.log("country_name: ", country_name);
+
   var query = new AV.Query(Visitor);
 
   query.equalTo("visitor_ip", ip);
@@ -156,6 +160,7 @@ function judgeVisitor(ip) {
 		newVisitor.setACL(acl);
 		newVisitor.set("visitor_ip", ip);
 		newVisitor.set("post_url", post_url);
+		newVisitor.set("country_name", country_name);
 		newVisitor.save(null, { // 上传到LeanCloud服务器中
 		  success: function(newVisitor) { },
 		  error: function(newVisitor, error) {
@@ -169,6 +174,20 @@ function judgeVisitor(ip) {
 	  addCount(Counter);
 	}
   });
+}
+
+//调用API获取访客位置
+function getCountryName(ip) {
+  var country_name;
+  $.ajax({
+	url: "http://freegeoip.net/json/" + ip,
+    success: function (data) {
+        console.log("geolocation: ", data);
+        country_name = data.country_name;
+    },
+    async: false
+  });
+  return country_name;
 }
 
 $(function() {
