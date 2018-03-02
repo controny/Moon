@@ -3,6 +3,7 @@ layout: post
 title:  "关于STL的hash table"
 tag:
 - C++
+- STL
 - 算法
 comments: true
 ---
