@@ -190,14 +190,27 @@ function getCountryName(ip) {
   return country_name;
 }
 
+// 计算并显示网站访问量
+function showHitCount() {
+    var query = new AV.Query('visited_times');
+    query.find().then(function(data) {
+        var hits = 0;
+        for (var i = 0, len = data.length; i < len; i++) {
+            hits += data[i].attributes.visited_times;
+        }
+        console.log("calculate hits: ", hits);
+        $(document.getElementById('leancloud-hits-count')).text(hits);
+        // console.log("find: ", $(document.getElementByClass(url)).find('.leancloud-hits-count'));
+    }, function(error) {
+        console.log("fail to calculate hits: ", error);
+    })
+}
+
 $(function() {
-  console.log("av: ", AV);
+  showHitCount();
   if ($('.leancloud_visitors').length == 1) {
 	// 文章页面，调用判断方法，对符合条件的访问增加访问次数
 	getVisitorIpAndJudge();
-  } else if ($('.post-link').length > 1){
-	// 首页 暂未使用
-	// showHitCount(Counter);
   }
 });
 
