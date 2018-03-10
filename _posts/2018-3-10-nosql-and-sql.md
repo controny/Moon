@@ -36,5 +36,5 @@ NoSQL数据库是传统SQL数据库的功能阉割版本，通过减少用不到
 但传统的SQL数据库仍然具备它的优势：可以用SQL语句方便的在一个表以及多个表之间做非常复杂的数据查询；使得对于安全性能很高的数据访问要求得以实现。使用哪种数据库要结合实际的业务需求来考虑。
 
 ## 参考
-<https://www.jianshu.com/p/b32fe4fe45a3>
-<https://www.zhihu.com/question/24225007>
+- <https://www.jianshu.com/p/b32fe4fe45a3>
+- <https://www.zhihu.com/question/24225007>
