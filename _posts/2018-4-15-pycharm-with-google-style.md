@@ -6,7 +6,9 @@ tag:
 comments: true
 ---
 
-项目后台决定选用Python开发，以[Google风格](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/)作为代码规范。这自然要引入代码静态检查工具的使用，而在Python的领域中，pylint无疑是最佳的选择。
+项目后台决定选用Python开发，最开始原本计划以[Google风格](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/)作为代码规范，后来发现直接用PyCharm默认集成的PEP8规范审查工具会省事许多，所以放弃了这个想法，但还是决定记录一下这折腾的过程。
+
+回到正题，代码的规范化自然要引入代码静态检查工具的使用，在Python的领域中，pylint是一个佼佼者。
 
 我们也推荐使用PyCharm这款强大的Python IDE进行开发，它不仅支持插件安装，还支持外部工具（如上述的pylint）的引入，极大地提高开发效率。下面就介绍怎样在PyCharm下利用pylint集成Google规范的代码检查。
 
